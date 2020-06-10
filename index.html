@@ -1,15 +1,43 @@
 <!DOCTYPE html>
 <html>
     <link href="style.css" rel="stylesheet"/>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto+Mono:wght@100&display=swap" rel="stylesheet"> 
     <head>
-        <title>Ary Yakos</title>
+        <title>n3zz</title>
     </head>
     <body>
-        <main>
-            <section class="Projects">
-                
-            </section>
-        </main>
-    </body> 
-    <footer>Ary Yakos is a pseudonym. Any one who is of the same name is coincidental.</footer>
+        <h1>Ary Yakos.</h1>
+        <h3> Programmer | Student | Gamer </h3>
+         <!-- The overlay -->
+        <div id="myNav" style="width:100%" class="overlay">
+            
+
+         <!-- Button to close the overlay navigation -->
+        <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
+  
+         <!-- Overlay content -->
+        <div class="overlay-content">
+            <a href="#">About Me</a>
+            <a href="#">Projects</a>
+        </div>
+        </div>
+         <!-- Use any element to open/show the overlay navigation menu -->
+         <span style="font-size:30px;cursor:pointer" onclick="openNav()">&#9776;</span>
+
+
+         <footer>Ary Yakos is a pseudonym. Anyone who is of the same name is purely coincidental.</footer>
+    </body>
+
+    <script>
+        /* Open */
+        function openNav() {
+            document.getElementById("myNav").style.height = "100%";
+        }
+
+        /* Close */
+        function closeNav() {
+            document.getElementById("myNav").style.height = "0%";
+        } 
+    </script>
+
 </html>
