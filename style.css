@@ -30,6 +30,21 @@ h3{
     width: 100%;
 }
 
+a{
+  color:#f8f8f8;
+  text-decoration: none;
+}
+
+section{
+  left: 0;
+  line-height: 200px;
+  margin-top: -100px;
+  position: absolute;
+  text-align: center;
+  top: 49%;
+  width: 100%; 
+}
+
 footer{
     position: fixed;
     font-family: 'Roboto Mono', cursive;
@@ -43,8 +58,8 @@ footer{
  /* The Overlay (background) */
  .overlay {
     /* Height & width depends on how you want to reveal the overlay (see JS below) */   
-    height: 100%;
-    width: 0;
+    height: 0;
+    width: 100%;
     position: fixed; /* Stay in place */
     z-index: 1; /* Sit on top */
     left: 0;
