@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html>
     <meta></meta>
-    <link href="style.css" rel="stylesheet"/>
+    <link href="projects.css" rel="stylesheet"/>
     <link href="https://fonts.googleapis.com/css2?family=Roboto+Mono:wght@100&display=swap" rel="stylesheet"> 
     <head>
         <link rel="shortcut icon" href="/favicon.ico" type="image/x-icon">
@@ -12,40 +12,42 @@
         <header>
             <span style="font-size:30px;cursor:pointer" onclick="openNav()">&#9776;</span>
         </header>
-        <h1 id="projects">Here are the projects I have worked on:</h1>
+        <section>
+            <h1>Here are some of the projects that I have worked in</h1>
+        </section>
         
          <!-- The overlay -->
-        <div id="myNav" style="width:100%;" class="overlay"></div>
+         <div id="myNav" class="overlay">
             
 
-         <!-- Button to close the overlay navigation -->
-        <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
-  
-         <!-- Overlay content -->
-        <div class="overlay-content">
-            <a href="index.html">Home</a>
-            <a href="About me.html">About Me</a>
-            <a href="Projects.html">Projects</a>
-            <a href="Contact.html">Contact Me</a>
-        </div>
-        </div>
-         <!-- Use any element to open/show the overlay navigation menu -->
-         
-
-
-         <footer>Ary Yakos is a pseudonym. Anyone who is of the same name is purely coincidental.</footer>
-    </body>
-
-    <script>
-        /* Open */
-        function openNav() {
-            document.getElementById("myNav").style.height = "100%";
-        }
-
-        /* Close */
-        function closeNav() {
-            document.getElementById("myNav").style.height = "0%";
-        } 
-    </script>
+            <!-- Button to close the overlay navigation -->
+           <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
+     
+            <!-- Overlay content -->
+           <div class="overlay-content">
+               <a href="index.html">Home</a>
+               <a href="About me.html">About Me</a>
+               <a href="Projects.html">Projects</a>
+               <a href="Contact.html">Contact Me</a>
+           </div>
+           </div>
+            <!-- Use any element to open/show the overlay navigation menu -->
+            
+   
+   
+            <footer>Ary Yakos is a pseudonym. Anyone who is of the same name is purely coincidental.</footer>
+       </body>
+   
+       <script>
+           /* Open */
+           function openNav() {
+               document.getElementById("myNav").style.height = "100%";
+           }
+   
+           /* Close */
+           function closeNav() {
+               document.getElementById("myNav").style.height = "0%";
+           } 
+       </script>
 
 </html>
