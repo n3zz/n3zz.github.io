@@ -53,6 +53,11 @@ a{
   width: 100%; 
 }
 
+#stream_window{
+  text-align:center;
+}
+
+
 footer{
     position: fixed;
     font-family: 'Roboto Mono', cursive;
