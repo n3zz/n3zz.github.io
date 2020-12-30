@@ -1,0 +1,16 @@
+body {
+    font-family:"Roboto Mono";
+    background-color:#1b1b1b;
+    color:#f8f8f8;
+}
+
+#bio {
+    width:700px;
+    padding:15%;
+    font-size:large;
+}
+
+#otw,#htb {
+    text-decoration:none;
+    color:#f8f8f8;
+}
