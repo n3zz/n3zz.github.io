@@ -18,6 +18,38 @@ html {
     margin:0 auto;
 }
 
+* {
+  transition: none 250ms ease;
+}
+
+a {
+    color: red;
+    display: inline-block;
+    position: relative;
+    transition-property: all;
+}
+
+a::before {
+    background-color: red;
+    content: "";
+    display: block;
+    height: 100%;
+    position: absolute;
+    transform: scaleX(0);
+    transform-origin: left;
+    transition: inherit;
+    transition-property: all;
+    width: 100%;
+    z-index: -1;
+}
+
+a:hover {
+    color: white;
+}
+
+a:hover::before {
+    transform: scaleX(1);
+}
 
 #scroll-prompt,#faceplate{
   display:flex;
