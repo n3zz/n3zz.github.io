@@ -9,6 +9,146 @@
         <link rel="shortcut icon" href="/favicon.ico" type="image/x-icon">
         <link rel="icon" href="/favicon.ico" type="image/x-icon">
         <title>Ary Yakos</title>
+        
+        <!--Style Block Specific to the about me page.-->
+        
+        <style>
+            #bio {
+                overflow:auto;
+                width:700px;
+                padding:15%;
+                font-size:large;
+                margin:0 auto;
+            }
+
+            /*tpdc block*/
+            * {
+            transition: none 250ms ease;
+            }
+      
+            #tpdc {
+                color: red;
+                display: inline-block;
+                position: relative;
+                transition-property: all;
+            }
+      
+            #tpdc::before {
+                background-color: #07a6ea;
+                content: "";
+                display: block;
+                height: 100%;
+                position: absolute;
+                transform: scaleX(0);
+                transform-origin: left;
+                transition: inherit;
+                transition-property: all;
+                width: 100%;
+                z-index: -1;
+            }
+      
+            #tpdc:hover {
+                color: #141414;
+            }
+      
+            #tpdc:hover::before {
+                transform: scaleX(1);
+            }
+
+            /*htb block*/
+            * {
+            transition: none 250ms ease;
+            }
+      
+      
+            #htb {
+                color: red;
+                display: inline-block;
+                position: relative;
+                transition-property: all;
+            }
+      
+            #htb::before {
+                background-color: #72A300;
+                content: "";
+                display: block;
+                height: 100%;
+                position: absolute;
+                transform: scaleX(0);
+                transform-origin: left;
+                transition: inherit;
+                transition-property: all;
+                width: 100%;
+                z-index: -1;
+            }
+      
+            #htb:hover {
+                color: #0A0A0A;
+            }
+      
+            #htb:hover::before {
+                transform: scaleX(1);
+            }
+
+
+            /*otw block*/
+            * {
+            transition: none 250ms ease;
+            }
+      
+            #otw {
+                color: red;
+                display: inline-block;
+                position: relative;
+                transition-property: all;
+            }
+      
+            #otw::before {
+                background-color: #ff1c1c;
+                content: "";
+                display: block;
+                height: 100%;
+                position: absolute;
+                transform: scaleX(0);
+                transform-origin: left;
+                transition: inherit;
+                transition-property: all;
+                width: 100%;
+                z-index: -1;
+            }
+      
+            #otw:hover {
+                color: #f4f5f0 ;
+            }
+      
+            #otw:hover::before {
+                transform: scaleX(1);
+            }
+
+            #scroll-prompt,#faceplate{
+                display:flex;
+                justify-content:center;
+            }
+
+            #otw,#htb,#tpdc {
+                text-decoration:none;
+                color:#f8f8f8;
+            }
+
+
+            #otw {
+                color:#ff1c1c;
+            }
+
+            #htb{
+                color:#8fcc00;
+            }
+
+            #tpdc{
+                color:#07a6ea;
+                display: inline-block;
+            }
+        </style>
     </head>
 
     
