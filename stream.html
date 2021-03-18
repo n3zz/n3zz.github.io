@@ -1,48 +1,55 @@
 <!DOCTYPE html>
 <html>
     <head>
-        <link href="res/stylesheets/index.css" rel="stylesheet"/>
+        <meta charset="UTF-8">
+        <meta name="description" content="Programmer, Student, Hacker">
+        <meta name="keywords" content="Ary Yakos">
+        <meta http-equiv="author" content="Ary Yakos/Amritesh Panda">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        
+        <link href="res/stylesheets/style.css" rel="stylesheet"/>
+        <link href="https://fonts.googleapis.com/css2?family=Roboto+Mono:wght@100&display=swap" rel="stylesheet"> 
+        
         <title>Ary Yakos | Stream</title>
     </head>
+    
     <body>
-
-        
         <div id="myNav" class="overlay">
             <!-- Button to close the overlay navigation -->
-           <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
+            <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
      
             <!-- Overlay content -->
-           <div class="overlay-content">
+            <div class="overlay-content">
                <a href="index.html">Home</a>
                <a href="About me.html">About Me</a>
                <a href="Projects.html">Projects</a>
                <a href="Contact.html">Contact Me</a>
                <a href="certifications.html">Achievements</a>
                <a href="stream.html">Stream Status</a>
-           </div>
-           </div>
-            <!-- Use any element to open/show the overlay navigation menu -->
+            </div>
+        </div>
+            
+           <!-- Use any element to open/show the overlay navigation menu -->
             <span style="font-size:30px;cursor:pointer" onclick="openNav()">&#9776;</span>
    
             <div id="stream_window">
-                <iframe src="https://embed.restream.io/player/index.html?token=c0c0579b229cf6905cab5ad10426be94" width="640" height="396" frameborder="0" allowfullscreen></iframe><p>Powered by <a href="https://restream.io">Restream.io</a></p>
+                <iframe src="https://embed.restream.io/player/index.html?token=c0c0579b229cf6905cab5ad10426be94" width="640" height="396" frameborder="0" allowfullscreen></iframe>
+                <p>Powered by <a href="https://restream.io">Restream.io</a></p>
             </div>
     
    
             <footer>Ary Yakos is a pseudonym. Anyone who is of the same name is purely coincidental.</footer>
-       </body>
+            
+            <script>
+                /* Open */
+                function openNav() {
+                    document.getElementById("myNav").style.height = "100%";
+                }
    
-       <script>
-           /* Open */
-           function openNav() {
-               document.getElementById("myNav").style.height = "100%";
-           }
-   
-           /* Close */
-           function closeNav() {
-               document.getElementById("myNav").style.height = "0%";
-           } 
-       </script>
-       
+                /* Close */
+                function closeNav() {
+                    document.getElementById("myNav").style.height = "0%";
+                } 
+            </script>
     </body>
 </html>
