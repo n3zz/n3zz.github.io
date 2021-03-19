@@ -161,7 +161,8 @@
     
     <body>
 
-        <header>
+        <!--Navbar Overlay Structure-->
+        <nav>
             <div class="overlay-content">
                 <a href="index.html">Home</a>
                 <a href="About me.html">About Me</a>
@@ -171,13 +172,13 @@
                 <a href="stream.html">Stream Status</a>
             </div>
             <span style="font-size:30px;cursor:pointer" onclick="openNav()">&#9776;</span>
-        </header>
+        </nav>
 
-        <div id="faceplate">
+        <header id="faceplate">
             <h1>Who Am I?</h1>
-        </div>
+        </header>
         
-        <article>
+        <main>
             <div id="bio">
                     Hello, I am Ary!
                     <br></br>
@@ -190,23 +191,8 @@
                     <br></br>
                     My first hand experience with cyber security is my main experience with Cyber Discovery and my own experience with Kali Linux and GNS and Cisco Packet Tracer. I also tried practical skills on legal hacking sites such as <a id="otw" href="https://overthewire.org/wargames/" target=blank>OverTheWire</a> and <a id="htb" href="https://www.hackthebox.eu/" target=blank>HackTheBox</a> I know all the basics it requires to make a network safe and secure as possible. Additionally I am also working on getting my Security+ and CEH.
             </div>
-        </article>
-
-        <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">×</a>
+        </main>  
 
         <footer>Ary Yakos is a pseudonym. Anyone who is of the same name is purely coincidental.</footer>
     </body>
-    
-    <script>
-        /* Open */
-        function openNav() {
-            document.getElementById("myNav").style.height = "100%";
-        }
-
-        /* Close */
-        function closeNav() {
-            document.getElementById("myNav").style.height = "0%";
-        } 
-    </script>
-
 </html>

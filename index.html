@@ -1,69 +1,41 @@
 <!DOCTYPE html>
 <html lang="en">
     <head>
-        <!--Site Metadata-->
         <meta charset="UTF-8">
-        <meta name="description" content="Programmer, Student, Hacker">
-        <meta name="keywords" content="Ary Yakos">
-        <meta http-equiv="author" content="Ary Yakos/Amritesh Panda">
+        <!--Site Metadata-->
+        <meta name="description" content="Description machine broken. Nothing interesting about Ary.">
+        <meta name="keywords" content="Ary Yakos n3zz">
+        <meta name="author" content="Ary Yakos/Amritesh Panda">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
-        <!--Favicon stuff and Resources-->
+        <!--Resources-->
         <link rel="shortcut icon" href="/favicon.ico" type="image/x-icon">
         <link rel="icon" href="/favicon.ico" type="image/x-icon">
         <link href="res/stylesheets/style.css" rel="stylesheet"/>
-        <link href="https://fonts.googleapis.com/css2?family=Roboto+Mono:wght@100&display=swap" rel="stylesheet">
         <!--Site title-->
-        <title>Ary Yakos | Contact Me</title>
-        <!--Styling-->
-        <style>
-            body {
-                background-color:#1b1b1b;
-            }
-            
-            
-            h1,h3 {
-                color:#f8f8f8;
-            }
-        </style>
+        <title>Ary Yakos.</title>
     </head>
-
-
+    
     <body>
+
+        <nav class="nav-overlay">
+            <button class="toggle" onclick="navOverlayToggle()">☰</button>
+            <ul class="flex menu">
+                <li><a href="#" onclick="navOverlayToggle()">Home</a></li>
+                <li><a href="./about.html">About Me</a></li>
+                <li><a href="./portfolio.html">My Portfolio</a></li>
+                <li><a href="./contact.html">Contact Me</a></li>
+            </ul>
+        </nav>
+
+
         <header>
-            <span style="font-size:30px;cursor:pointer" onclick="openNav()">&#9776;</span>
+            <h1>Ary Yakos.</h1>
+            <h3> Programmer | Student | Hacker </h3>
         </header>
-        <h1>Ary Yakos.</h1>
-        <h3> Programmer | Student | Hacker </h3>
         
-        <!-- The overlay -->
-        <div id="myNav" class="overlay">
-
-        <!-- Button to close the overlay navigation -->
-        <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
-  
-        <!-- Overlay content -->
-        <div class="overlay-content">
-            <a href="index.html">Home</a>
-            <a href="About me.html">About Me</a>
-            <a href="Projects.html">Projects</a>
-            <a href="Contact.html">Contact Me</a>
-            <a href="certifications.html">Achievements</a>
-            <a href="stream.html">Stream Status</a>
-        </div>
-        </div>
-        <!-- Use any element to open/show the overlay navigation menu -->
         <footer>Ary Yakos is a pseudonym. Anyone who is of the same name is purely coincidental.</footer>
+
+        <!--Calling the navoverlay.js script file-->
+        <script src="./navoverlay.js" type="text/javascript"></script>
     </body>
-
-    <script>
-        /* Open */
-        function openNav() {
-            document.getElementById("myNav").style.height = "100%";
-        }
-
-        /* Close */
-        function closeNav() {
-            document.getElementById("myNav").style.height = "0%";
-        } 
-    </script>
 </html>
