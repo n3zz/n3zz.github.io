@@ -1,3 +1,4 @@
+
 var navOverlay = document.querySelector("nav.nav-overlay");
 var navOverlayToggled = false;
 

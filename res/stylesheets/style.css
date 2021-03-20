@@ -70,7 +70,7 @@ nav ul{
   list-style:none;
 }
 
-/*Phil Script stuff*/
+/*Flex Box Stuff - To add proper formatting to the links within the overlay menu*/
 .flex{
   align-items:center;
   display:flex;
