@@ -14,13 +14,11 @@
   --black:#141414;
   --grey:#1b1b1b;
   --white:#f8f8f8;
-  --htb-green:#72A300;
-  --otw-red:#ff1c1c;
-  --tpdc-blue:#07a6ea;
 }
 
 /*CSS Variables: var(variable name)*/
 html {
+  scroll-behavior: smooth;
   background-color: var(--grey);
   color: var(--white);
   /*25px / 1.25 -- Line height to make font spacing more uniform.*/
@@ -77,7 +75,18 @@ nav ul{
   justify-content:space-evenly;
 }
 
-/*Navoverlay Moment*/
+.container{
+  margin: 0 auto;
+  width:1250px;
+}
+
+header{
+  height: 100vh;
+  text-align: center;
+  width: 100%;
+}
+
+/*Nav overlay Styling*/
 nav.nav-overlay{
   background-color:rgba(20, 20, 20, 0.95);
   font-size:1.75rem;
@@ -117,3 +126,23 @@ nav.nav-overlay{
 .nav-overlay .menu li{
   margin:7.5px 0;
 }
+
+ /*Bio Spacing*/
+
+ #bio{
+   padding-bottom:450px;
+ }
+
+/*Projects Spacing*/
+
+ #projects{
+   padding: 450px 0px 450px 0px;
+ }
+
+#project-type{
+  padding: 40px 0px 40px 0px;
+}
+
+ #project-card{
+   padding-top:300px;
+ }

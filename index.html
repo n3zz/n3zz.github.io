@@ -1,41 +1,87 @@
 <!DOCTYPE html>
 <html lang="en">
     <head>
-        <meta charset="UTF-8">
         <!--Site Metadata-->
-        <meta name="description" content="Description machine broken. Nothing interesting about Ary.">
-        <meta name="keywords" content="Ary Yakos n3zz">
-        <meta name="author" content="Ary Yakos/Amritesh Panda">
+        <meta charset="UTF-8">
+        <meta name="description" content="Programmer, Student, Hacker">
+        <meta name="keywords" content="Ary Yakos">
+        <meta http-equiv="author" content="Ary Yakos/Amritesh Panda">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
-        <!--Resources-->
+        <!--Favicon stuff and Resources-->
         <link rel="shortcut icon" href="/favicon.ico" type="image/x-icon">
         <link rel="icon" href="/favicon.ico" type="image/x-icon">
         <link href="res/stylesheets/style.css" rel="stylesheet"/>
         <!--Site title-->
-        <title>Ary Yakos.</title>
+        <title>Ary Yakos</title>
     </head>
+
     
     <body>
+
+
         <!--Navigation HTML for the nav overlay.-->
         <nav class="nav-overlay">
             <button class="toggle" onclick="navOverlayToggle()">☰</button>
             <ul class="flex menu">
                 <li><a href="#" onclick="navOverlayToggle()">Home</a></li>
-                <li><a href="./about.html">About Me</a></li>
-                <li><a href="./portfolio.html">My Portfolio</a></li>
+                <li><a href="#bio" onclick="navOverlayToggle()">About Me</a></li>
+                <li><a href="#projects" onclick="navOverlayToggle()">My Portfolio</a></li>
                 <li><a href="./contact.html">Contact Me</a></li>
             </ul>
         </nav>
 
         <!--Banner or the main face of the page.-->
-        <header>
-            <h1>Ary Yakos.</h1>
-            <h3> Programmer | Student | Hacker </h3>
+        <header class="flex">
+            <div class="container">
+                <h1>Ary Yakos.</h1>
+                <h3> Programmer | Student | Hacker </h3>
+            </div>
         </header>
+
+        <main>
+            <section class="container" id="bio">
+
+                Hello, I am Ary!
+                <br></br>
+                My real name is Amritesh. I have the online aliases: Ary, n3zz, ary_yakos, tesh. I go by many names. 
+                I am a 19 year old computer science student aspiring to pursue a career in Cyber Security.
+                As you can see I have somewhat prior knowledge in Web Design.
+                I have about 7+ years in coding experience. I am currently also learning Java, PHP and JavaScript to gain further knowledge in website development. I have experience in both Python (Flask and Django) and JS (React) Web frameworks. More details in my <a href="#projects">Portfolio</a>.
+                <br></br>
+                In addition to programming, I have deep passion for video games and seeing what makes them tick. When I am not digging around in cyber security research or tinkering with my raspberry pi, I would look at making text based adventure game prototypes. I also code on games in working with my friends and the people in a small discord server that I run called <a id="tpdc" href="https://tpdc.club" target=blank>The Pseudo Dopamine Centre</a>.
+                <br></br>
+                My first hand experience with cyber security is my main experience with Cyber Discovery and my own experience with Kali Linux and GNS and Cisco Packet Tracer. I also tried practical skills on legal hacking sites such as <a href="https://overthewire.org/wargames/" target=blank>OverTheWire</a> and <a href="https://www.hackthebox.eu/" target=blank>HackTheBox</a> I know all the basics it requires to make a network safe and secure as possible. Additionally I am also working on getting my Security+ and CEH.
+
+            </section>
+
+            <section class="container" id="projects">
+                The variety of projects I have worked on range from Web Design to Scripting to Full on breaking machines and conducting cyber operations on said practice machines. There is also programming applications in said interested fields. Most of my projects aim to combine both my passion for education, cyber security as well the concept of gamification.
+                Most of these projects are open source and will be available at my <a href="https://github.com/n3zz">Github</a>.
+
+                <div class="container" id="project-type">
+                    <h1>Legacy Projects</h1>
+                    HacSim V1 - This was a school project for my A-Level NEA. The HacSim was used for represent a virtual simulated network and to demonstrate the various attacks you can  
+                </div>
+
+                <div class="container" id="project-type">
+                    <h1>Ongoing Projects</h1> 
+                    TPDC - Founder of TPDC - This is a passion project and I have worked on the website as well as the ThePseudoBot which is our own custom Discord Chat bot which we will be integrating with our website.
+                </div>
+
+                <div class="container" id="project-type">
+                    <h1>Upcoming Projects</h1>
+                    <article>n3zz Tech - Version 2.0 of Website</article>
+                    <article>HacSim V2 - Version 2 of the Hacking Simulator</article>
+                    <article>Project Radial - A project which will come out.... when it is ready. (Hi Projekt Red if you are here xD)</article>
+                </div>
+            </section>
+
+        </main>  
         
         <footer>Ary Yakos is a pseudonym. Anyone who is of the same name is purely coincidental.</footer>
-
+        
         <!--Calling the navoverlay.js script file-->
         <script src="./navoverlay.js" type="text/javascript"></script>
+    
     </body>
 </html>
