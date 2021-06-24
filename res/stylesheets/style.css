@@ -130,13 +130,13 @@ nav.nav-overlay{
  /*Bio Spacing*/
 
  #bio{
-   padding-bottom:450px;
+   padding:100px 0px 450px 0px;
  }
 
 /*Projects Spacing*/
 
  #projects{
-   padding: 450px 0px 450px 0px;
+   padding: 100px 0px 450px 0px;
  }
 
 #project-type{
@@ -144,5 +144,10 @@ nav.nav-overlay{
 }
 
  #project-card{
-   padding-top:300px;
+   padding:30px 0px 30px 0px;
+ }
+
+ #contacts{
+  text-align:center;
+  padding:450px 0;
  }
