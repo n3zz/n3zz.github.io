@@ -151,3 +151,7 @@ nav.nav-overlay{
   text-align:center;
   padding:450px 0;
  }
+
+ #certifications{
+   grid-area: auto;
+ }
