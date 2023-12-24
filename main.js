@@ -1,23 +1,39 @@
-command_mem  = [];
+// Module imports
+import commands from "./commands.js";
 
+// DOM Elements
+const form = document.querySelector("form"); // The selector for the form and how we are getting the form window itself so we can fire the event
+const input = document.querySelector("#user-input"); // The input data so we can parse it through.
+const output = document.querySelector("#terminal-output"); // The terminal output.
 
-const cmdHandler = function commandHandler(cmd){
-  switch (cmd.toLowerCase()) {
-    case 'intro':
-      console.log("Yo I am Bit. And if you are reading this then I- nah I am kidding. The name's Ary! :)");
-      command = prompt('Test input: ');
-    case 'about':
-      console.log("I am an aspiring cyber security engineer who is also trying to gain his reigns back in programming! :D");
-      command = prompt('Test input: ');
-    case 'tpdc':
-      console.log('The Pseudo Dopamine centre is a cool discord server you should totally join! Join here at https://tpdc.club');
-      command = prompt('Test input: ');
-    case 'projects':
-      console.log('Not many projects this website is one of them. Also I made a network hacking simulator similar to the game Hacknet. But i am trying to remake it in TS and HTML (Probably will also TS this website as well). Probably will merge it with this website so it will be a whole interactive game. :)');
-      command = prompt('Test input: ');
-    default:
-      console.log("Don't try to crash my website :(");
-      command = prompt('Test input: ');
+// States
+const inputMemory = []; // Stores all previous inputs.
+
+// Event listeners
+form.addEventListener("submit", event => { // Add a SubmitEvent listener to handle user submissions.
+  event.preventDefault(); // Prevents the page from refreshing.
+
+  // Handle form data
+  inject(`<span class="user">user@n3zz</span>: ${input.value}`);
+  handleInput(input.value);
+
+  inputMemory.unshift(input.value); // Adds the input to the start of the array.
+  
+  input.value = ''; // Clear input form
+});
+
+/**
+ * Prints a value to the terminal output div.
+ * @param {string} value The value to print.
+ */
+function inject(value) { output.innerHTML += `<p>${value}</p>`; }
+
+function handleInput(input) {
+  for (const command of commands) if (input === command.name) {
+    command.execute(inject);
+
+    return;
   }
-}
 
+  inject("Don't break my site. >:(");
+}
