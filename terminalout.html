@@ -3,15 +3,45 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Terminal Test</title>
+    <title>Termin3zz Test</title>
+
+    <link rel="stylesheet" href="./res/stylesheets/style.css">
+    <style>
+        input {
+            background-color: transparent;
+            border: none;
+            border-bottom: 1px solid currentColor;
+            color: currentColor;
+        }
+
+        footer {
+            background-color: #141414;
+            bottom: 0;
+            position: fixed;
+            width: 100%;
+        }
+
+        .user {
+            color: green;
+        }
+    </style>
 </head>
 
 <body>
-    <h1>Terminal Test</h1>
-    <textarea type="text" id="" cols="30" rows="10"></textarea>
-    
+    <h1>The Termin3zz</h1>
+    <div id="terminal-output">
+        <p>&copy; 2024 >_Ary_Yakos. All rights reserved.</p>
+        <br />
+    </div>
+    <form>
+        <label for="user-input"><span class="user">user@n3zz</span>>_</label>
+        <input id="user-input" type="text" />
+    </form>
+
     <!--Here is where the terimal script will come through-->
-    <script src="main.js"></script>
+    <script src="main.js" type="module"></script>
+
+    <footer>Prefer a normal webpage? You can use a GUI version <a href="./gui.html">here</a>!</footer>
 </body>
 
 </html>

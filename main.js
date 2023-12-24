@@ -7,6 +7,7 @@ const input = document.querySelector("#user-input"); // The input data so we can
 const output = document.querySelector("#terminal-output"); // The terminal output.
 
 // States
+const defaultOutput = output.innerHTML;
 const inputMemory = []; // Stores all previous inputs.
 
 // Event listeners
@@ -28,7 +29,17 @@ form.addEventListener("submit", event => { // Add a SubmitEvent listener to hand
  */
 function inject(value) { output.innerHTML += `<p>${value}</p>`; }
 
+/**
+ * Handles the user input.
+ * @param {string} input The user input string.
+ */
 function handleInput(input) {
+  if (input === "clear") {
+    output.innerHTML = defaultOutput;
+
+    return;
+  }
+  
   for (const command of commands) if (input === command.name) {
     command.execute(inject);
 
